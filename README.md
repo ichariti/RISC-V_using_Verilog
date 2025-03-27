@@ -1,4 +1,4 @@
-# RISCV-using-Verilog
+# RISC-V using Verilog
 This project uses the Hardware Description Language Verilog, with the end goal of creating a basic, simplified version of a RISC-V processor.
 It consists of 5 parts:
 1) Create an Arithmetic Logic Unit (ALU)

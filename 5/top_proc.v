@@ -137,6 +137,7 @@ module top_proc(
           MemRead=1'b0;
           MemWrite=1'b0;
           MemToReg=1'b0;
+          RegWrite=1'b0;
         end
         
         ID: begin
@@ -144,6 +145,7 @@ module top_proc(
           MemRead=1'b0;
           MemWrite=1'b0;
           MemToReg=1'b0;
+          RegWrite=1'b0;
         end
        
         EX:begin
@@ -151,6 +153,7 @@ module top_proc(
           MemRead=1'b0;
           MemWrite=1'b0;
           MemToReg=1'b0;
+          RegWrite=1'b0;
         end
        
         MEM: begin
@@ -165,6 +168,7 @@ module top_proc(
           
           MemToReg=1'b0;
           loadPC=1'b0;
+          RegWrite=1'b0;
         end
         
         WB: begin 
@@ -186,6 +190,8 @@ module top_proc(
           loadPC=1'b0;
           MemRead=1'b0;
           MemWrite=1'b0;
+          MemToReg=1'b0;
+          RegWrite=1'b0;
         end
           
       endcase
